@@ -10,21 +10,27 @@
         flex: 0 1 calc(50% - 20px);
     }
 }
-
+.cards-container, .service-card{
+    flex: 1 1 calc(50% - 20px) !important;
+    max-width: calc(50% - 20px) !important;
+}
 /* Celulares: 1 card por linha */
 @media (max-width: 600px) {
-    .cards-container,
-    .testimonials-container,
-    .info-container {
-        padding: 20px;
+    .cards-container .service-card {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
     }
 
-    .service-card,
-    .testimonial-card,
-    .info-card {
-        flex: 0 1 100%;
-        max-width: 100%;
+    .cards-container img.card-image {
+        width: 100%;
+        height: auto;
     }
+
+    .card-content p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+}
 
     .header {
         padding: 15px 20px;
@@ -50,4 +56,3 @@
     .hero-content p {
         font-size: 16px;
     }
-}
