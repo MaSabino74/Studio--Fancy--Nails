@@ -1,0 +1,412 @@
+/* 1. Reset Básico (Opcional, mas recomendado) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; /* Usar uma fonte simples para o exemplo */
+    background-color: #f8f8f8;
+}
+
+/* 2. Estilos do Cabeçalho (Header) */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço menor para o logo e o texto */
+    padding: 20px 50px; /* Espaço nas laterais */
+    background-color: #fff; /* Fundo branco ou transparente, dependendo do design final */
+}
+
+.logo {
+    width: 80px; /* Logo pequeno, como na imagem */
+    height: auto;
+    border-radius: 50%;
+    border:2px solid #f00bf4;
+    
+}
+
+.brand-text h1 {
+    margin: 0;
+    font-size: 18px; /* Tamanho do título "Estúdio de Unhas" */
+    color: #f00bf4;
+    font-weight: 500; /* Levemente mais fino que o padrão */
+}
+
+.brand-text p {
+    margin: 0;
+    font-size: 20px; /* Tamanho do subtítulo "Beleza e elegância em cada detalhe" */
+    color: #fbbbfc;
+}
+
+/* 3. Estilos da Seção Principal (Hero Section) */
+
+.hero-section {
+    position: relative;
+    height: 500px; /* Altura da seção principal */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    /* A imagem de fundo será aplicada via CSS */
+    background-image: url('./img/Hero.webp'); /* **ATENÇÃO:** Substitua 'hero.jpg' pelo caminho real da sua imagem das mãos */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Cria o efeito de "névoa" rosa e clareia a imagem para o texto ser legível */
+    box-shadow: inset 0 0 0 1000px rgba(255, 235, 240, 0.7); /* Cor rosa clara com 70% de opacidade */
+}
+
+.hero-content {
+    /* Posiciona o conteúdo à esquerda, como na imagem */
+    max-width: 500px;
+    z-index: 2; /* Garante que o texto fique acima do 'overlay' da imagem */
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Destaque para a palavra "melhor" com uma cor de acento */
+.hero-content h2 br + span {
+    color: #e91e63; /* Tom de rosa/vermelho para destaque */
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* 4. Estilo do Botão CTA */
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e91e63; /* A mesma cor de destaque */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c2185b; /* Cor um pouco mais escura no hover */
+}
+/* 1. Estilos da Seção */
+.services-section {
+    padding: 80px 50px; /* Espaçamento interno */
+    background-color: #fcfcfc; /* Fundo muito claro */
+}
+
+/* 2. Estilos do Cabeçalho da Seção */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Aplica a cor rosa para o destaque no título, como no modelo */
+.section-header h2 span { 
+    color: #e91e63; /* Cor de destaque (rosa) */
+}
+
+.section-header p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 3. Contêiner Principal dos Cards (usando Flexbox) */
+.cards-container {
+    display: flex;
+    justify-content: center; /* Centraliza os cards */
+    gap: 30px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Importante! Permite que os cards pulem para a próxima linha em telas menores ou se houver mais de 3 */
+}
+
+/* 4. Estilos de Cada Card */
+.service-card {
+    flex: 0 1 calc(33.333% - 20px); /* Garante que 3 cards caibam na linha com espaçamento */
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* Garante que a imagem respeite a borda arredondada */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra sutil para destacar */
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #888;
+    min-height: 40px; /* Garante que todos os cards tenham altura mínima igual */
+    margin-bottom: 15px;
+}
+
+/* 5. Estilos do Preço e Botão */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 15px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e91e63; /* Preço em destaque rosa */
+}
+
+.schedule-button {
+    padding: 8px 15px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.schedule-button:hover {
+    background-color: #c2185b;
+}
+/*cards depoimentos*/
+/* 1. Estilos da Seção */
+.testimonials-section {
+    padding: 80px 50px;
+    background-color: #f8f8f8; /* Fundo diferente para dar contraste */
+}
+
+/* 2. Estilos do Contêiner (Flexbox) */
+.testimonials-container {
+    padding: 80px 50px; /* Espaçamento interno */
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+
+/* 3. Estilos de Cada Card de Depoimento */
+.testimonial-card {
+    flex: 0 1 calc(33.333% - 20px); /* 3 cards por linha */
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra mais leve */
+    text-align: center;
+    min-height: 250px; /* Garante que todos os cards tenham um tamanho mínimo */
+}
+
+/* 4. Estilos da Avaliação (Rating) */
+.rating {
+    margin-bottom: 15px;
+    font-size: 24px;
+    letter-spacing: -3px; /* Aproxima as estrelas */
+    display: inline-block; /* Garante que o rating se comporte como bloco de texto para o alinhamento */
+}
+
+.star {
+    color: #ccc; /* Cor padrão para estrelas vazias ou de fundo */
+    display: inline-block;
+    position: relative;
+}
+
+.star.filled {
+    color: #FFC107; /* Amarelo/Dourado para estrelas cheias */
+}
+
+/* 5. Efeito de Meia Estrela (4.5) */
+.star.half-filled {
+    color: #ccc; /* O fundo é cinza */
+}
+
+/* O pseudo-elemento cria o "preenchimento" dourado sobre metade da estrela cinza */
+.star.half-filled::before {
+    content: '★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Apenas 50% da largura da estrela será dourada */
+    overflow: hidden;
+    color: #FFC107; /* Cor dourada */
+}
+
+/* 6. Estilos do Texto e Nome da Cliente */
+
+.quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.client-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+}
+/*seção de informações de contato*/
+/* 1. Estilos da Seção de Contato */
+.contact-section {
+    /* Mantém o padding padronizado (Ex: 80px) para consistência */
+    padding: 90px 60px; 
+    background-color: #fcfcfc; /* Cor de fundo clara */
+}
+
+/* 2. Contêiner Principal dos Cards */
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+}
+
+/* 3. Estilos de Cada Card de Informação */
+.info-card {
+    flex: 0 1 calc(33.333% - 20px); /* 3 cards por linha */
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+}
+
+.info-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* 4. Estilos dos Links (Opcional) */
+.map-link,
+.whatsapp-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #e91e63; /* Cor de destaque */
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-link {
+    background-color: #25D366; /* Cor do WhatsApp para o link */
+}
+
+.map-link:hover {
+    background-color: #c2185b;
+}
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
+/*footer*/
+/* 1. Estilos Principais do Footer */
+.main-footer {
+    background-color: #333; /* Fundo escuro para contraste */
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 5px solid #e91e63; /* Borda sutil na cor de destaque */
+}
+
+/* 2. Estilos dos Ícones de Redes Sociais */
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e91e63; /* Cor de destaque ao passar o mouse */
+}
+
+/* 3. Estilos dos Textos */
+.copyright-text {
+    margin-bottom: 5px;
+}
+
+.developed-by {
+    margin-top: 5px;
+}
+
+.developed-by a {
+    color: #fff; /* Link em branco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.developed-by a:hover {
+    color: #e91e63; /* Cor de destaque ao passar o mouse no nome */
+}
