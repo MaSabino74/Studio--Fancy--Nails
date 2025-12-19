@@ -33,7 +33,9 @@ index.html
 
 ## 📍 Objetivo
 Criar uma presença digital elegante e profissional para estúdios de Nail Designer, com foco em estética, clareza e experiência do usuário.
-
+<br>
+<h2 aling ="center">📷 Imagem do Projeto</h2>
+<img aling ="center" alt="imagem do projeto" src=">
 
 ## 📧 Contato
 
