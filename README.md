@@ -22,10 +22,7 @@ Site institucional para o **Studio Fancy Nail**, desenvolvido com HTML5 e CSS3, 
   <br>
 ## 📂 Estrutura
 
-## 📍 Objetivo
-Criar uma presença digital elegante e profissional para estúdios de Nail Designer, com foco em estética, clareza e experiência do usuário.
-
-/img
+img
  <br>
 styles.css
  <br>
@@ -33,6 +30,11 @@ responsive.css
  <br>
 index.html  
  <br>
+
+## 📍 Objetivo
+Criar uma presença digital elegante e profissional para estúdios de Nail Designer, com foco em estética, clareza e experiência do usuário.
+
+
 ## 📧 Contato
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/marcos-sabino-dev)
