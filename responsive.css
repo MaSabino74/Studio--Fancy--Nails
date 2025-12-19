@@ -1,0 +1,53 @@
+/* ============================
+   RESPONSIVIDADE REAL OFICIAL
+   ============================ */
+
+/* Tablets: 2 cards por linha */
+@media (max-width: 900px) {
+    .service-card,
+    .testimonial-card,
+    .info-card {
+        flex: 0 1 calc(50% - 20px);
+    }
+}
+
+/* Celulares: 1 card por linha */
+@media (max-width: 600px) {
+    .cards-container,
+    .testimonials-container,
+    .info-container {
+        padding: 20px;
+    }
+
+    .service-card,
+    .testimonial-card,
+    .info-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .brand-text h1 {
+        font-size: 16px;
+    }
+
+    .brand-text p {
+        font-size: 14px;
+    }
+
+    .hero-section {
+        height: 380px;
+        padding: 0 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
