@@ -411,6 +411,10 @@ img {
     font-weight: bold;
     transition: color 0.3s;
 }
+
+.developed-by a:hover {
+    color: #e91e63; /* Cor de destaque ao passar o mouse no nome */
+}
 .cards-container img.card-image {
     width: 100%;
     height: auto;
@@ -421,8 +425,6 @@ img {
     height: auto;
 }
 
-.developed-by a:hover {
-    color: #e91e63; /* Cor de destaque ao passar o mouse no nome */
-}
+
 
 
