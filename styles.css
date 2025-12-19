@@ -146,6 +146,7 @@ img {
 .service-card {
     flex: 0 1 calc(33.333% - 20px); /* Garante que 3 cards caibam na linha com espaçamento */
     max-width: 350px;
+    min-width:280px;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden; /* Garante que a imagem respeite a borda arredondada */
@@ -415,6 +416,7 @@ img {
 .developed-by a:hover {
     color: #e91e63; /* Cor de destaque ao passar o mouse no nome */
 }
+
 
 
 
