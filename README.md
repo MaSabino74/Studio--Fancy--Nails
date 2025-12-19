@@ -34,8 +34,11 @@ index.html
 ## 📍 Objetivo
 Criar uma presença digital elegante e profissional para estúdios de Nail Designer, com foco em estética, clareza e experiência do usuário.
 <br>
-<h2 aling ="center">📷 Imagem do Projeto</h2>
-<img aling ="center" alt="imagem do projeto" src=">
+
+## 📷 Imagem do Projeto</h2>
+<img aling ="center" alt="imagem do projeto" src="https://github.com/MaSabino74/Studio--Fancy--Nails/blob/main/Mockup%20-%20Fancy%20Nails%20Design.png">
+<a>https://masabino74.github.io/Studio--Fancy--Nails/</a>
+
 
 ## 📧 Contato
 
