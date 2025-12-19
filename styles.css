@@ -411,8 +411,18 @@ img {
     font-weight: bold;
     transition: color 0.3s;
 }
+.cards-container img.card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.services-section .cards-container .service-card {
+    height: auto;
+}
 
 .developed-by a:hover {
     color: #e91e63; /* Cor de destaque ao passar o mouse no nome */
 }
+
 
