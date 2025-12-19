@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 body {
     font-family: sans-serif; /* Usar uma fonte simples para o exemplo */
     background-color: #f8f8f8;
@@ -52,7 +57,7 @@ body {
     /* A imagem de fundo será aplicada via CSS */
     background-image: url('./img/Hero.webp'); /* **ATENÇÃO:** Substitua 'hero.jpg' pelo caminho real da sua imagem das mãos */
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     /* Cria o efeito de "névoa" rosa e clareia a imagem para o texto ser legível */
     box-shadow: inset 0 0 0 1000px rgba(255, 235, 240, 0.7); /* Cor rosa clara com 70% de opacidade */
@@ -409,4 +414,5 @@ body {
 
 .developed-by a:hover {
     color: #e91e63; /* Cor de destaque ao passar o mouse no nome */
+
 }
