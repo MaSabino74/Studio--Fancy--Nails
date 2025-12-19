@@ -1,58 +1,179 @@
-/* ============================
-   RESPONSIVIDADE REAL OFICIAL
-   ============================ */
+/* ============================================
+   MEDIA QUERIES PARA RESPONSIVIDADE
+   ============================================ */
 
-/* Tablets: 2 cards por linha */
-@media (max-width: 900px) {
+/* Tablets e telas médias (até 1024px) */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 20px 30px;
+    }
+    
+    .hero-section {
+        padding: 0 30px;
+    }
+    
+    .hero-content h2 {
+        font-size: 40px;
+    }
+    
+    .services-section,
+    .testimonials-section,
+    .contact-section {
+        padding: 60px 30px;
+    }
+    
+    .testimonials-container {
+        padding: 60px 30px;
+    }
+    
+    /* Cards em 2 colunas */
     .service-card,
     .testimonial-card,
     .info-card {
-        flex: 0 1 calc(50% - 20px);
-    }
-}
-.cards-container, .service-card{
-    flex: 1 1 calc(50% - 20px) !important;
-    max-width: calc(50% - 20px) !important;
-}
-/* Celulares: 1 card por linha */
-@media (max-width: 600px) {
-    .cards-container .service-card {
-        flex: 1 1 100% !important;
-        max-width: 100% !important;
-    }
-
-    .cards-container img.card-image {
-        width: 100%;
-        height: auto;
-    }
-
-    .card-content p {
-        font-size: 0.9rem;
-        line-height: 1.3rem;
+        flex: 0 1 calc(50% - 15px);
+        max-width: 100%;
     }
 }
 
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
     .header {
         padding: 15px 20px;
     }
-
+    
+    .logo {
+        width: 60px;
+    }
+    
     .brand-text h1 {
         font-size: 16px;
     }
-
+    
     .brand-text p {
         font-size: 14px;
     }
-
+    
     .hero-section {
-        height: 380px;
+        height: 400px;
         padding: 0 20px;
     }
-
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
     .hero-content h2 {
         font-size: 32px;
     }
-
+    
     .hero-content p {
         font-size: 16px;
     }
+    
+    .services-section,
+    .testimonials-section,
+    .contact-section {
+        padding: 50px 20px;
+    }
+    
+    .testimonials-container {
+        padding: 50px 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .section-header p {
+        font-size: 14px;
+    }
+}
+
+/* Smartphones (até 600px) */
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .hero-section {
+        height: 350px;
+        padding: 0 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .services-section,
+    .testimonials-section,
+    .contact-section {
+        padding: 40px 15px;
+    }
+    
+    .testimonials-container {
+        padding: 40px 15px;
+    }
+    
+    .section-header h2 {
+        font-size: 24px;
+    }
+    
+    /* Cards em 1 coluna */
+    .cards-container,
+    .testimonials-container,
+    .info-container {
+        gap: 20px;
+    }
+    
+    .service-card,
+    .testimonial-card,
+    .info-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .schedule-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Smartphones muito pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+    .hero-content h2 {
+        font-size: 24px;
+    }
+    
+    .section-header h2 {
+        font-size: 22px;
+    }
+    
+    .service-card,
+    .testimonial-card,
+    .info-card {
+        padding: 20px;
+    }
+    
+    .card-content {
+        padding: 10px;
+    }
+}
